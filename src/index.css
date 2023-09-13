@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 body {
-    background-color: rgba(255, 247, 240, 1);
-    background-image: 
-      linear-gradient(rgba(254, 252, 247, 1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(254, 252, 247, 1) 1px, transparent 1px);
-    background-size: 
-      88px 88px,
-      88px 88px
-  }
+  background-color: rgba(255, 247, 240, 1);
+  background-image: linear-gradient(rgba(235, 230, 232, 1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 230, 232, 1) 1px, transparent 1px);
+  background-size: 88px 88px, 88px 88px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width:0px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
