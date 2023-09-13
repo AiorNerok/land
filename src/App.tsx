@@ -1,4 +1,4 @@
-import { Hero, Video } from "./widgets";
+import { Hero, Problems, Video } from "./widgets";
 import "./App.css";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <>
       <Hero />
       <Video />
+      <Problems />
     </>
   );
 }
