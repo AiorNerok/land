@@ -14,35 +14,35 @@ export const Footer = () => {
             </Box>
             <Box>
               <Flex direction="column">
-                <Link className="text-[black]" href="">
+                <Link style={{ color: "black" }} href="">
                   Content
                 </Link>
-                <Link className="text-[black]" href="">
+                <Link style={{ color: "black" }} href="">
                   Market
                 </Link>
               </Flex>
             </Box>
             <Box>
               <Flex direction="column">
-                <Link className="text-[black]" href="">
+                <Link style={{ color: "black" }} href="">
                   Finance
                 </Link>
-                <Link className="text-[black]" href="">
+                <Link style={{ color: "black" }} href="">
                   About us
                 </Link>
               </Flex>
             </Box>
             <Box>
-              <Link className="text-[black]" href="http://">
+              <Link style={{ color: "black" }} href="http://">
                 <img src={TgIcon} alt="tg" />
               </Link>
             </Box>
             <Box>
               <Flex direction="column">
-                <Link className="text-[black]" href="tel:+12389765432">
+                <Link style={{ color: "black" }} href="tel:+12389765432">
                   +123 89 76 543 2
                 </Link>
-                <Link className="text-[black]" href="mailto:hronit@gmail.com">
+                <Link style={{ color: "black" }} href="mailto:hronit@gmail.com">
                   hronit@gmail.com
                 </Link>
               </Flex>
