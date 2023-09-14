@@ -1,7 +1,19 @@
+import { cn } from "@/lib";
 import { PropsWithChildren } from "react";
 
-export const Container = ({ children }: PropsWithChildren) => {
+type ContainerProps = PropsWithChildren & {
+  classNames?: string;
+};
+
+export const Container = ({ children, classNames }: ContainerProps) => {
   return (
-    <div className="px-3 max-w-6xl w-full mx-auto min-h-screen relative flex">{children}</div>
+    <div
+      className={cn(
+        "px-3 max-w-6xl w-full mx-auto min-h-screen relative flex",
+        classNames
+      )}
+    >
+      {children}
+    </div>
   );
 };
