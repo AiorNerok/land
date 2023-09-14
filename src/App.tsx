@@ -1,4 +1,4 @@
-import { Hero, Problems, Team, Ticker, Video } from "./widgets";
+import { ComparisonCompetitors, Hero, Problems, Team, Video } from "./widgets";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <Hero />
       <Video />
       <Problems />
-      <Ticker />
+      <ComparisonCompetitors />
       <Team />
     </>
   );
