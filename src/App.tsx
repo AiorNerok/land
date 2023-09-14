@@ -1,14 +1,22 @@
-import { ComparisonCompetitors, Hero, Problems, Team, Video } from "./widgets";
+import {
+  ComparisonCompetitors,
+  Hero,
+  PathRelease,
+  Problems,
+  Team,
+  Video,
+} from "./widgets";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Video />
-      <Problems />
-      <ComparisonCompetitors />
-      <Team />
+      <Problems /> */}
+      <PathRelease />
+      {/* <ComparisonCompetitors />
+      <Team /> */}
     </>
   );
 }
