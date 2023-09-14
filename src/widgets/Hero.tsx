@@ -3,7 +3,6 @@ import { Container } from "@/components/common";
 import Tg from "@/assets/tg.png";
 import In from "@/assets/in.png";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
-import { Button } from "@radix-ui/themes";
 
 export const Hero = () => {
   const menuItem: { id: number; title: string }[] = [
@@ -56,7 +55,7 @@ export const Hero = () => {
                 relevant talents here
               </p>
             </div>
-            <Button className="max-w-xl w-full bg-light-green shadow-button rounded-md font-bold text-xl py-3 leading-5">Сonnect with us</Button>
+            <button className="max-w-xl w-full bg-light-green shadow-button rounded-md font-bold text-xl py-3 leading-5">Сonnect with us</button>
           </div>
         </div>
 

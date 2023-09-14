@@ -1,6 +1,10 @@
 export { Hero } from "./Hero.tsx";
 export { Video } from "./Video.tsx";
 export { Problems } from "./Problems.tsx";
-export { Team } from './Team.tsx'
-export { ComparisonCompetitors } from './ComparisonCompetitors.tsx'
-export { PathRelease } from './PathRelease.tsx'
+export { Team } from "./Team.tsx";
+export { ComparisonCompetitors } from "./ComparisonCompetitors.tsx";
+export { PathRelease } from "./PathRelease.tsx";
+export { Copyright } from "./Copyright.tsx";
+export { Footer } from "./Footer.tsx";
+export { Advantages } from "./Advantages";
+export {Expenses} from "./Expenses";

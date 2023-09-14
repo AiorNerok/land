@@ -3,16 +3,20 @@ import { Box, Flex } from "@radix-ui/themes";
 
 import Marquee from "react-fast-marquee";
 
-const Item = () => (
+type ItemProps = {
+  text: string;
+};
+
+const Item = ({ text }: ItemProps) => (
   <Box className="font-grotesk text-light-green mr-6 w-[190px]">
     <Flex direction={"row"} align={"center"} justify={"between"} gap={"2"}>
       <Cloud />
-      Сompetitor analysis
+      {text}
     </Flex>
   </Box>
 );
 
-export const Ticker = () => {
+export const Ticker = ({ text }: { text: string }) => {
   const [count, setCount] = useState(10);
 
   useLayoutEffect(() => {
@@ -32,7 +36,7 @@ export const Ticker = () => {
   return (
     <Marquee className="bg-[black] py-6">
       {[...Array(count).keys()].map((i) => (
-        <Item key={i} />
+        <Item text={text} key={i} />
       ))}
     </Marquee>
   );

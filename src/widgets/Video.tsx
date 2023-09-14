@@ -2,9 +2,9 @@ import Mac from "@/assets/Macbook.png";
 
 export const Video = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center reactive">
+    <div className="min-h-screen flex items-center justify-center reactiv max-w-5xl mx-auto">
       <div>
-        <img srcSet={Mac} src={Mac} alt="mac" />
+        <img src={Mac} alt="" />
       </div>
     </div>
   );

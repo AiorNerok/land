@@ -13,33 +13,33 @@ export const Team = () => {
     {
       img: Vasia,
       name: "Vasily Schwartz",
-      position: "Author of the idea",
+      position: "Ceo",
     },
     {
       img: masha,
       name: "Masha",
-      position: "No Author of the idea",
+      position: "Product Manager",
     },
     {
       img: anton,
       name: "Anton",
-      position: "No Author of the idea",
+      position: "FullStack Dev",
     },
     {
       img: ania,
       name: "Ania",
-      position: "No Author of the idea",
+      position: "UI/UX Design",
     },
     {
       img: ruslan,
-      name: "Ruslan Samoylov aka Peesya The Great",
-      position: "No Author of the idea",
+      name: "Ruslan Samoylov",
+      position: "Architect",
     },
   ];
 
   return (
-    <Container classNames="flex-row">
-      <Box width={"100%"} height={"100%"} pt={'6'}>
+    <Container classNames="flex-row min-h-min">
+      <Box width={"100%"} pt={"6"}>
         <Flex align={"center"} justify={"center"} mb={"6"}>
           <Heading
             as="h2"

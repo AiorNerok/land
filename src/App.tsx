@@ -1,5 +1,9 @@
 import {
+  Advantages,
   ComparisonCompetitors,
+  Copyright,
+  Expenses,
+  Footer,
   Hero,
   PathRelease,
   Problems,
@@ -11,12 +15,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Hero />
+      <Hero />
       <Video />
-      <Problems /> */}
+      <Problems />
+      <ComparisonCompetitors />
       <PathRelease />
-      {/* <ComparisonCompetitors />
-      <Team /> */}
+      <Expenses />
+      <Advantages />
+      <Team />
+      <div className="h-40"></div>
+      <Footer />
+      <Copyright />
     </>
   );
 }

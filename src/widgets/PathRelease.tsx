@@ -1,92 +1,38 @@
-import { BarChart } from "@mui/x-charts";
-
-type MyDatum = { position: number; value: number; conversion: number };
+import { Flex } from "@radix-ui/themes";
 
 export const PathRelease = () => {
-  const data: MyDatum[] = [
+  const stats = [
+    { id: 1, name: "3 months", value: "TMVP release" },
+    { id: 2, name: "6 months", value: "Product launch" },
     {
-      position: 1,
-      value: 0,
-      conversion: 0,
-    },
-    {
-      position: 2,
-      value: 0,
-      conversion: 0,
-    },
-    {
-      position: 3,
-      value: 0,
-      conversion: 0,
-    },
-    {
-      position: 4,
-      value: 30,
-      conversion: 0.25,
-    },
-    {
-      position: 5,
-      value: 100,
-      conversion: 0.5,
-    },
-    {
-      position: 6,
-      value: 200,
-      conversion: 1,
-    },
-    {
-      position: 7,
-      value: 300,
-      conversion: 1.5,
-    },
-    {
-      position: 8,
-      value: 400,
-      conversion: 2,
-    },
-    {
-      position: 9,
-      value: 500,
-      conversion: 2.75,
-    },
-    {
-      position: 10,
-      value: 600,
-      conversion: 3.5,
-    },
-    {
-      position: 11,
-      value: 800,
-      conversion: 4.25,
-    },
-    {
-      position: 12,
-      value: 1000,
-      conversion: 5,
+      id: 3,
+      value:
+        "Initiation of marketing strategy implementation starting from the",
+      name: "4th month",
     },
   ];
 
-  const Positions = data.map((el) => String(el.position));
-  const Series = data.map((el) => el.value);
-
   return (
-    <>
-      <BarChart
-        xAxis={[
-          {
-            id: "barCategories",
-            data: Positions,
-            scaleType: "band",
-          },
-        ]}
-        series={[
-          {
-            data: Series,
-          },
-        ]}
-        width={500}
-        height={300}
-      />
-    </>
+    <Flex align={"center"} justify={"center"} className="h-[600px]">
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+            {stats.map((stat) => (
+              <div
+                key={stat.id}
+                className="mx-auto flex max-w-xs flex-col gap-y-4 justify-center"
+              >
+                <dt className="text-base leading-7 text-gray-600">
+                  {stat.name}
+                </dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
+                  {stat.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </Flex>
   );
 };
