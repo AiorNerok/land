@@ -6,7 +6,7 @@ import anton from "@/assets/anton.jpg";
 import masha from "@/assets/masha.jpg";
 import ruslan from "@/assets/ruslan.jpg";
 import { TeamProps } from "@/components/common/CardTeam";
-import { Flex } from "@radix-ui/themes";
+import { Box, Flex, Heading } from "@radix-ui/themes";
 
 export const Team = () => {
   const Team: TeamProps[] = [
@@ -38,12 +38,25 @@ export const Team = () => {
   ];
 
   return (
-    <Container classNames="flex-row" >
-      <Flex justify={"between"} width={'100%'} height={"min-content"} gap={"2"}>
-        {Team.map((el) => (
-          <CardTeam key={el.img} {...el}></CardTeam>
-        ))}
-      </Flex>
+    <Container classNames="flex-row">
+      <Box width={"100%"} height={"100%"} pt={'6'}>
+        <Flex align={"center"} justify={"center"} mb={"6"}>
+          <Heading
+            as="h2"
+            className="shadow-button shadow-purple rounded-xl font-work text-5xl font-medium px-8 py-5"
+            style={{
+              background: "rgba(162, 226, 254, 1)",
+            }}
+          >
+            Team
+          </Heading>
+        </Flex>
+        <Flex gap={"3"}>
+          {Team.map((el) => (
+            <CardTeam key={el.img} {...el}></CardTeam>
+          ))}
+        </Flex>
+      </Box>
     </Container>
   );
 };
