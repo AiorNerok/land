@@ -2,7 +2,7 @@ import { Flex } from "@radix-ui/themes";
 
 export const PathRelease = () => {
   const stats = [
-    { id: 1, name: "3 months", value: "TMVP release" },
+    { id: 1, name: "3 months", value: "MVP release" },
     { id: 2, name: "6 months", value: "Product launch" },
     {
       id: 3,
@@ -20,9 +20,9 @@ export const PathRelease = () => {
             {stats.map((stat) => (
               <div
                 key={stat.id}
-                className="mx-auto flex max-w-xs flex-col gap-y-4 justify-center"
+                className="mx-auto flex max-w-xs flex-col gap-y-4 justify-center border bg-[#fff] shadow-button p-5 rounded-2xl"
               >
-                <dt className="text-base leading-7 text-gray-600">
+                <dt className="text-2xl text-gray-600">
                   {stat.name}
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
