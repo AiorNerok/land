@@ -17,17 +17,17 @@ export const Team = () => {
     },
     {
       img: masha,
-      name: "Masha",
+      name: "Maria Smolyakova",
       position: "Product Manager",
     },
     {
       img: anton,
-      name: "Anton",
+      name: "Anton Blazhin",
       position: "FullStack Dev",
     },
     {
       img: ania,
-      name: "Ania",
+      name: "Anna Kutovaya",
       position: "UI/UX Design",
     },
     {
