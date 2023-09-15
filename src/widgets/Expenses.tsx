@@ -136,7 +136,7 @@ export const Expenses = () => {
   };
 
   return (
-    <Box className="bg-purple">
+    <Box className="bg-purple" id="Finance">
       <Ticker text="Progress to future" />
       <Container classNames="flex-col gap-6 py-10">
         <Box className="flex justify-between gap">
@@ -149,6 +149,9 @@ export const Expenses = () => {
             </Text>
             <Text as="p" className="text-2xl font-work font-medium">
               $400,000 on payroll
+            </Text>
+            <Text as="p" className="text-2xl font-work font-medium">
+              Average bill per offer $3000
             </Text>
           </Box>
           <Box className="bg-[white] w-fit border shadow-button rounded-3xl p-3">

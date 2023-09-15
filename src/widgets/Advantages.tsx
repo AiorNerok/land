@@ -20,7 +20,7 @@ export const Advantages = () => {
               gap={"9"}
             >
               <Text className="font-medium text-2xl font-work" as="p">
-                3000€ per offer <br /> for companies
+                $3000 per offer <br /> for companies
               </Text>
               <Text
                 className="font-medium text-2xl font-work text-center"
@@ -39,7 +39,7 @@ export const Advantages = () => {
               Agencies
             </Text>
             <Text className="font-medium text-2xl font-work text-center" as="p">
-              10€ per contact for agencies
+              $10 per contact for agencies
             </Text>
           </Box>
         </Flex>

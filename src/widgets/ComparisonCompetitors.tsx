@@ -13,7 +13,7 @@ function divideNumberByPieces(x: number, delimiter = " ") {
 
 export const ComparisonCompetitors = () => {
   return (
-    <Box className="bg-purple min-h-screen relative flex items-center justify-center">
+    <Box className="bg-purple min-h-screen relative flex items-center justify-center" id="Market">
       <Box className="absolute top-0 inset-x-0">
         <Ticker text="Сompetitor analysis" />
       </Box>

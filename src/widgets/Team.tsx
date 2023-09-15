@@ -1,10 +1,10 @@
 import { Container, CardTeam } from "@/components/common";
 
-import Vasia from "@/assets/vasia.gif";
+import Vasia from "@/assets/vasia.png";
 import ania from "@/assets/ania.jpg";
-import anton from "@/assets/anton.jpg";
-import masha from "@/assets/masha.jpg";
-import ruslan from "@/assets/ruslan.jpg";
+import anton from "@/assets/anton.png";
+import masha from "@/assets/masha.png";
+import ruslan from "@/assets/ruslan.png";
 import { TeamProps } from "@/components/common/CardTeam";
 import { Box, Flex, Heading } from "@radix-ui/themes";
 
@@ -39,7 +39,7 @@ export const Team = () => {
 
   return (
     <Container classNames="flex-row min-h-min">
-      <Box width={"100%"} pt={"6"}>
+      <Box width={"100%"} pt={"6"} id="About_us">
         <Flex align={"center"} justify={"center"} mb={"6"}>
           <Heading
             as="h2"

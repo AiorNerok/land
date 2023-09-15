@@ -14,36 +14,48 @@ export const Footer = () => {
             </Box>
             <Box>
               <Flex direction="column">
-                <Link style={{ color: "black" }} href="">
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="#Content"
+                >
                   Content
                 </Link>
-                <Link style={{ color: "black" }} href="">
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="#Market"
+                >
                   Market
                 </Link>
               </Flex>
             </Box>
             <Box>
               <Flex direction="column">
-                <Link style={{ color: "black" }} href="">
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="#Finance"
+                >
                   Finance
                 </Link>
-                <Link style={{ color: "black" }} href="">
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="#About_us"
+                >
                   About us
                 </Link>
               </Flex>
             </Box>
             <Box>
-              <Link style={{ color: "black" }} href="http://">
+              <Link style={{ color: "black" }} href="https://t.me/mudaist">
                 <img src={TgIcon} alt="tg" />
               </Link>
             </Box>
             <Box>
               <Flex direction="column">
-                <Link style={{ color: "black" }} href="tel:+12389765432">
-                  +123 89 76 543 2
-                </Link>
-                <Link style={{ color: "black" }} href="mailto:hronit@gmail.com">
-                  hronit@gmail.com
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="tel:+79992133600"
+                >
+                  +7(999)213-36-00
                 </Link>
               </Flex>
             </Box>

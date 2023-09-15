@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: rgba(255, 247, 240, 1);
@@ -14,7 +17,7 @@ body {
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
-  width:0px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,5 +25,3 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
-
-

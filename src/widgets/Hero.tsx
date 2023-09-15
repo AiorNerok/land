@@ -3,24 +3,29 @@ import { Container } from "@/components/common";
 import Tg from "@/assets/tg.png";
 import In from "@/assets/in.png";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { Link } from "@radix-ui/themes";
 
 export const Hero = () => {
-  const menuItem: { id: number; title: string }[] = [
+  const menuItem: { id: number; title: string; href: string }[] = [
     {
       id: 1,
       title: "Content",
+      href: "#Content",
     },
     {
       id: 2,
       title: "Market",
+      href: "#Market",
     },
     {
       id: 3,
       title: "Finance",
+      href: "#Finance",
     },
     {
       id: 4,
-      title: "Team",
+      title: "About us",
+      href: "#About_us",
     },
   ];
 
@@ -35,8 +40,13 @@ export const Hero = () => {
             <div>
               <ul className="flex flex-row flex-nowrap space-x-10 ">
                 {menuItem.map((el) => (
-                  <li key={el.id} className="font-work">
-                    {el.title}
+                  <li key={el.id} className="font-work no-underline">
+                    <Link
+                      style={{ textDecoration: "none", color: "#000" }}
+                      href={el.href}
+                    >
+                      {el.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -55,18 +65,33 @@ export const Hero = () => {
                 relevant talents here
               </p>
             </div>
-            <button className="max-w-xl w-full bg-light-green shadow-button rounded-md font-bold text-xl py-3 leading-5">Сonnect with us</button>
+            <button className="max-w-xl w-full bg-light-green shadow-button rounded-md font-bold text-xl py-3 leading-5">
+              <Link
+                style={{ textDecoration: "none", color: "#000" }}
+                href="https://t.me/mudaist"
+              >
+                Сonnect with us
+              </Link>
+            </button>
           </div>
         </div>
 
         <div>
           <AspectRatio ratio={1}>
-            <img className="h-full w-full object-cover" src={Tg} alt="telegram" />
+            <img
+              className="h-full w-full object-cover"
+              src={Tg}
+              alt="telegram"
+            />
           </AspectRatio>
         </div>
         <div>
           <AspectRatio ratio={1}>
-            <img className="h-full w-full object-cover" src={In} alt="telegram" />
+            <img
+              className="h-full w-full object-cover"
+              src={In}
+              alt="telegram"
+            />
           </AspectRatio>
         </div>
       </Container>
