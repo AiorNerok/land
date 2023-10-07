@@ -4,6 +4,9 @@
 
 html {
   scroll-behavior: smooth;
+
+  color-scheme: dark light;
+
 }
 
 body {
@@ -13,11 +16,6 @@ body {
   background-size: 88px 88px, 88px 88px;
 
   min-width: 1140px;
-}
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
