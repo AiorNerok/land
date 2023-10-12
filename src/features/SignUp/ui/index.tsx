@@ -1,17 +1,8 @@
 "use client";
 
+import { SignUp } from "@/entities";
 import { Button } from "@/shared/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/shared/ui/dialog";
-import { Input } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
+import { Dialog, DialogContent, DialogTrigger } from "@/shared/ui/dialog";
 import { useForm } from "react-hook-form";
 
 export const SignUpButton = () => {
@@ -23,37 +14,7 @@ export const SignUpButton = () => {
         <Button variant="ghost">SignUp</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-3xl hr-shadow">
-        <DialogHeader>
-          <DialogTitle>SignUp</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when youre done.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-4 py-4 max-w-xl w-full">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              defaultValue="Pedro Duarte"
-              className="col-span-3"
-            />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input
-              id="username"
-              defaultValue="@peduarte"
-              className="col-span-3"
-            />
-          </div>
-        </div>
-        <DialogFooter>
-          <Button type="submit">Save changes</Button>
-        </DialogFooter>
+        <SignUp />
       </DialogContent>
     </Dialog>
   );

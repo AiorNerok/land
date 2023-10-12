@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import "./globals.css";
+
 import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
 
@@ -15,13 +16,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  authModal,
 }: {
   children: React.ReactNode;
+  authModal: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={cn(inter.className, work_sans.className, "bg-hr-bg")}>
         <Header />
+        {authModal}
         <div className="hr-h-body container">{children}</div>
       </body>
     </html>
