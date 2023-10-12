@@ -77,4 +77,11 @@
   .hr-shadow {
     @apply border border-solid border-black shadow-[4px_4px_0_0_#000];
   }
+
+  .hr-h-header {
+    @apply h-40;
+  }
+  .hr-h-body {
+    @apply min-h-[calc(100vh-160px)];
+  }
 }

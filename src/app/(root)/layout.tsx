@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, work_sans.className, "bg-hr-bg")}>
         <Header />
-        {children}
+        <div className="hr-h-body container">{children}</div>
       </body>
     </html>
   );

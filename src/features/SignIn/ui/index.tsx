@@ -1,17 +1,41 @@
+"use client";
+
 import { Button } from "@/shared/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/shared/ui/dialog";
+import {
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/shared/ui/form";
 import { Input } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";
+import { useId } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { formSchemas } from "./validation";
 
 export const SignInButton = () => {
+  const EmailId = useId();
+  const PasswordId = useId();
+
+  const form = useForm<z.infer<typeof formSchemas>>({
+    resolver: zodResolver(formSchemas),
+    defaultValues: {
+      email: "",
+    },
+  });
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -19,25 +43,26 @@ export const SignInButton = () => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-3xl hr-shadow flex flex-col justify-center items-center">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when youre done.
-          </DialogDescription>
+          <DialogTitle>Sign In Form</DialogTitle>
         </DialogHeader>
-        <div className="grid gap-4 py-4 max-w-xl w-full">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
-        </div>
+
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+              <FormDescription>
+                This is your public display name.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
         <DialogFooter>
           <Button type="submit">Save changes</Button>
         </DialogFooter>
