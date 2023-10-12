@@ -3,7 +3,7 @@ module.exports = {
   darkMode: ["class"],
   content: [
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -47,6 +47,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "hr-accent": "#CEFF1A",
+        "hr-bg": "#DAC3FF",
       },
       borderRadius: {
         lg: "var(--radius)",

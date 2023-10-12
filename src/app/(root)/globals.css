@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,5 +72,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .hr-shadow {
+    @apply border border-solid border-black shadow-[4px_4px_0_0_#000];
   }
 }
