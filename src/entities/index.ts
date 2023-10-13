@@ -1,2 +1,3 @@
 export { SigninEntities } from "./signin";
-export { SignUp } from "./signup";
+export { SignUpEntities } from "./signup";
+export { AvatarEntities } from './avatar'

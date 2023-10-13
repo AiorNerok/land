@@ -10,7 +10,7 @@ type SignUpProps = Record<
   string
 >;
 
-export const SignUp = () => {
+export const SignUpEntities = () => {
   const { register, handleSubmit, reset, getFieldState } = useForm<SignUpProps>(
     {
       defaultValues: {
@@ -25,8 +25,9 @@ export const SignUp = () => {
   return (
     <form
       onSubmit={handleSubmit(SignUpHandler)}
-      className="max-w-xl w-full flex justify-center items-center gap-4 flex-col"
+      className="max-w-xl w-full flex justify-center items-center gap-4 flex-col m-auto"
     >
+      <h2>SignUp</h2>
       <div className="w-full">
         <Label>Username</Label>
         <Input {...register("username")} type="text" autoComplete="off" />
@@ -42,14 +43,22 @@ export const SignUp = () => {
       </div>
       <div className="w-full">
         <Label>Password</Label>
-        <Input {...register("password")} type="password"></Input>
+        <Input
+          {...register("password")}
+          type="password"
+          autoComplete="on"
+        ></Input>
       </div>
       <div className="w-full">
         <Label>Password Repeat</Label>
-        <Input {...register("passwordRepeat")} type="password"></Input>
+        <Input
+          {...register("passwordRepeat")}
+          type="password"
+          autoComplete="on"
+        ></Input>
       </div>
       <Button type="submit" className="w-full">
-        Save changes
+        Register
       </Button>
     </form>
   );

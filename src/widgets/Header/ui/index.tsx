@@ -5,6 +5,7 @@ import { Icons } from "@/shared";
 import Link from "next/link";
 import { useSignInModal } from "@/hooks/useSignInModal";
 import { useRouter } from "next/navigation";
+import { AvatarEntities } from "@/entities";
 
 export default function Header() {
   const { toggleStatusBool, isOpen } = useSignInModal();
@@ -20,7 +21,11 @@ export default function Header() {
       <div className="container flex items-center justify-between">
         <Icons.logo />
         <div className="gap-8">
-          <Link href={"/sign-in"}>SignIIIN</Link>
+          <SignInButton />
+          <SignUpButton />
+        </div>
+        <div>
+          <AvatarEntities />
         </div>
       </div>
     </header>

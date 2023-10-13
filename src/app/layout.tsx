@@ -25,8 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, work_sans.className, "bg-hr-bg")}>
         <Header />
+        <div className="hr-h-body container flex">{children}</div>
         {authModal}
-        <div className="hr-h-body container">{children}</div>
       </body>
     </html>
   );
