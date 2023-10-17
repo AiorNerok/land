@@ -1,2 +1,2 @@
-export { SignInButton } from './SignIn'
+export { LogInButton } from './LogIn'
 export { SignUpButton } from './SignUp'
