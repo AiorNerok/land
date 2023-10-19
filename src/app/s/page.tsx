@@ -1,3 +1,4 @@
+import { UploadForm } from "@/features";
 import { Textarea } from "@/shared/ui/textarea";
 
 enum Stage {
@@ -7,10 +8,9 @@ enum Stage {
 }
 
 export default function page() {
-    
   return (
     <div className="">
-      <Textarea />
+      <UploadForm></UploadForm>
     </div>
   );
 }
